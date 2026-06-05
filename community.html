@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Hub | Anime Boy LK</title>
+    <meta name="description" content="Engage with Sri Lanka's Otaku community. Suggest review topics, cast upvotes on project priorities, and get in touch with the creator.">
+    
+    <!-- Google Fonts & Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav id="main-nav">
+        <a href="index.html" class="logo">
+            <span>ANIME BOY <span class="logo-dot">LK</span></span>
+        </a>
+        
+        <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="blog.html">Anime Blog</a></li>
+            <li><a href="community.html" class="active">Community</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="https://www.youtube.com/@AnimeBoyLK" target="_blank" class="btn btn-primary btn-sm"><i class="fa-brands fa-youtube"></i> Subscribe</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="community-hero" style="background-image: url('images/community-bg-.png');">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content reveal">
+                <span class="subtitle">Creator Connection</span>
+                <h1 class="text-gradient">The Community Hub</h1>
+                <p>Voice your opinions, suggest upcoming video reviews, upvote the anime board, and connect directly with the creator.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANIME SUGGESTION & VOTING SYSTEM -->
+    <section class="section-padding" id="voting-section">
+        <div class="container">
+            <span class="subtitle center-text">Have your say</span>
+            <h2 class="section-title center text-glow center-text">Suggest & Vote Anime Reviews</h2>
+            <p class="center-text" style="color: var(--color-text-sub); max-width: 600px; margin: -1.5rem auto 3rem; font-size: 0.95rem;">
+                Submit ideas for character depth summaries or series reviews, and upvote existing requests to help us prioritize upcoming channel scripts!
+            </p>
+
+            <div class="voting-container">
+                
+                <!-- Suggest input form -->
+                <form id="suggest-anime-form" class="suggest-box reveal">
+                    <input type="text" id="new-anime-suggestion" class="suggest-input" placeholder="Suggest an anime or specific video topic..." aria-label="New Anime Suggestion">
+                    <button type="submit" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Suggest Topic</button>
+                </form>
+
+                <!-- Voting List Container -->
+                <div class="voting-list" id="voting-list">
+                    <!-- Dynamic vote items loaded via JS -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL MEDIA TILES GRID -->
+    <section class="section-padding" id="social-media-grid" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title center text-glow center-text">Connect Everywhere</h2>
+            <div class="social-tiles-grid">
+                
+                <!-- YouTube -->
+                <a href="https://youtube.com/@AnimeBoyLK" target="_blank" class="social-tile youtube glass-panel reveal">
+                    <i class="fab fa-youtube"></i>
+                    <h3>YouTube Channel</h3>
+                    <p>Main video reviews, guides, and character studies published weekly.</p>
+                </a>
+
+                <!-- Discord -->
+                <a href="https://discord.gg/AnimeBoyLK" target="_blank" class="social-tile discord glass-panel reveal">
+                    <i class="fab fa-discord"></i>
+                    <h3>Discord Server</h3>
+                    <p>Interact, share memes, and chat with Sri Lankan Otaku fans live.</p>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/AnimeBoyLK" target="_blank" class="social-tile instagram glass-panel reveal">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>Catch aesthetic reels, video updates, and schedule notifications.</p>
+                </a>
+
+                <!-- Blog -->
+                <a href="blog.html" class="social-tile blog-tile glass-panel reveal">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h3>Anime Blog</h3>
+                    <p>Read detailed articles and long-form written summaries of anime lore.</p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM & INFO -->
+    <section class="section-padding" id="contact-section">
+        <div class="container">
+            <h2 class="section-title center text-glow center-text">Get In Touch</h2>
+            
+            <div class="contact-grid">
+                
+                <!-- Contact info cards -->
+                <div class="contact-info-cards reveal">
+                    <div class="contact-card-item glass-panel">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Creator Email</h4>
+                            <p>animeboylkofficial@gmail.com
+</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card-item glass-panel">
+                        <i class="fa-solid fa-handshake"></i>
+                        <div>
+                            <h4>Business Inquiries</h4>
+                            <p>animeboylkofficial@gmail.com
+</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card-item glass-panel">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <div>
+                            <h4>Community Queries</h4>
+                            <p>Use our active whatsapp support channels.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper glass-panel reveal" style="padding: 3rem 2.5rem;">
+                    <form id="creator-contact-form" novalidate>
+                        
+                        <div class="form-group">
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" id="contact-name" class="form-control" placeholder="Enter your name">
+                            <div class="form-error">Name is required.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">Email Address</label>
+                            <input type="email" id="contact-email" class="form-control" placeholder="name@domain.com">
+                            <div class="form-error">Please enter a valid email address.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-anime">Favorite Anime</label>
+                            <input type="text" id="contact-anime" class="form-control" placeholder="e.g. Naruto, Solo Leveling, Death Note">
+                            <div class="form-error">Favorite anime is required.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Your Message</label>
+                            <textarea id="contact-message" class="form-control" placeholder="What's on your mind? (minimum 10 characters)"></textarea>
+                            <div class="form-error">Message must be at least 10 characters long.</div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                        
+                        <!-- Success alert box -->
+                        <div class="form-success-msg" id="contact-success-msg">
+                            <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent successfully. We will get back to you shortly.
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION (Community specific) -->
+    <section class="section-padding" id="community-faq" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title center text-glow center-text">Community Guidelines FAQ</h2>
+            
+            <div class="faq-accordion reveal">
+                
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        What are the main rules of the youtube channel?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We maintain a friendly, family-focused atmosphere. Spoilers must be flagged using spoiler tags, cyberbullying or hate speech is strictly banned, and discussions must remain clean and respectful for all Otaku age groups.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        How often are upvoted suggestions reviewed?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We check the voting lists every weekend before scripting new videos. High-ranking suggestions are prioritized for outline reviews, and the final script options are typically announced on Discord first.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        Can I suggest non-anime topics, like manga or game reviews?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Absolutely! The suggestion form supports manga theories, video game analyses (if they have anime styles like Genshin Impact or Elden Ring), and general creator collaboration topics.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="global-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-mask logo-icon text-glow"></i>
+                        <span>ANIME BOY <span class="logo-dot">LK</span></span>
+                    </a>
+                    <p class="footer-desc">
+                        Sri Lanka's leading content creator platform providing high-quality anime reviews, histories, and theories in Sinhala.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://youtube.com/@AnimeBoyLK" target="_blank" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://discord.gg/AnimeBoyLK" target="_blank" class="social-btn" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="https://instagram.com/AnimeBoyLK" target="_blank" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/AnimeBoyLK" target="_blank" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Creator</a></li>
+                        <li><a href="videos.html">Watch Videos</a></li>
+                        <li><a href="blog.html">Anime Blog</a></li>
+                        <li><a href="community.html">Community Page</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="videos.html?category=reviews">Anime Reviews</a></li>
+                        <li><a href="videos.html?category=analysis">Character Depth</a></li>
+                        <li><a href="videos.html?category=podcasts">Weekly Podcasts</a></li>
+                        <li><a href="videos.html?category=guides">Otaku Guides</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Branding Channel</h3>
+                    <p style="color: var(--color-text-sub); font-size: 0.95rem; margin-bottom: 16px;">
+                        Subscribe on YouTube to catch new videos every week!
+                    </p>
+                    <a href="https://www.youtube.com/@AnimeBoyLK" target="_blank" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem; width: 100%;">
+                        <i class="fab fa-youtube"></i> Visit Channel
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Anime Boy LK. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

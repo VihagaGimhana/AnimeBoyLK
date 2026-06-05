@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Boy LK | Official Website</title>
+    <meta name="description" content="Welcome to the official creator website of Anime Boy LK. Your ultimate Sinhala destination for high-quality anime reviews, character analysis, lore deep dives, and Otaku discussions.">
+    
+    <!-- Google Fonts & Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav id="main-nav">
+        <a href="index.html" class="logo">
+            <span>ANIME BOY <span class="logo-dot">LK</span></span>
+        </a>
+        
+        <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="blog.html">Anime Blog</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="https://www.youtube.com/@AnimeBoyLK" target="_blank" class="btn btn-primary btn-sm"><i class="fa-brands fa-youtube"></i> Subscribe</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home-hero" style="background-image: url('images/Home-bg.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="particles-container"></div>
+        <div class="container">
+            <div class="hero-content reveal">
+                <span class="subtitle">Sri Lanka's Otaku Haven</span>
+                <h1 class="text-gradient">Welcome to<br>Anime Boy LK</h1>
+                <p>Your Sinhala Destination for Anime Reviews, Character Analysis & Anime Discussions. Explore the lore, dissect the theories, and join the ultimate local creator community.</p>
+                <div class="hero-btns">
+                    <a href="videos.html" class="btn btn-primary" id="hero-watch-btn"><i class="fa-solid fa-play"></i> Watch Videos</a>
+                    <a href="blog.html" class="btn btn-secondary" id="hero-blog-btn"><i class="fa-solid fa-book-open"></i> Explore Blog</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED LATEST VIDEO -->
+    <section class="section-padding" id="latest-feature">
+        <div class="container">
+            <h2 class="section-title center text-glow center-text">Featured Latest Video</h2>
+            <div class="featured-wrapper reveal">
+                <div class="featured-video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-iSKZ3_tVaU?si=Rr2W1Ko_OPDA9bzW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="featured-details">
+                    <span class="subtitle">Trending Content</span>
+                    <h3>God of Lightning වෙන Hajime Kashimoගෙ Powers ගැන | Jujutsu Kaisen | Sinhala</h3>
+                    <p>Today we are gonna talk about Hajime Kashimo's powers in Jujutsu Kaisen. We analyze the his personality, powers, and much more in this comprehensive explanation. Learn what makes Hajime Kashimo so powerful in our detailed Sinhala analysis.</p>
+                    <a href="https://youtu.be/-iSKZ3_tVaU" target="_blank" class="btn btn-primary"><i class="fa-solid fa-play"></i> Watch on YouTube</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPULAR CATEGORIES -->
+    <section class="section-padding" id="categories-section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title center text-glow center-text">Popular Categories</h2>
+            <div class="categories-grid">
+                
+                <div class="category-card glass-panel reveal" onclick="location.href='videos.html?category=reviews'">
+                    <div class="category-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <h3>Anime Reviews</h3>
+                    <p>Unbiased, critical reviews of the latest anime seasons and movies in Sinhala.</p>
+                </div>
+
+                <div class="category-card glass-panel reveal" onclick="location.href='videos.html?category=analysis'">
+                    <div class="category-icon"><i class="fa-solid fa-user-ninja"></i></div>
+                    <h3>Character Analysis</h3>
+                    <p>Diving deep into the psychology, lore, and character arcs of your favorite anime icons.</p>
+                </div>
+
+                <div class="category-card glass-panel reveal" onclick="location.href='videos.html?category=podcasts'">
+                    <div class="category-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+                    <h3>Anime Podcasts</h3>
+                    <p>Weekly chat-shows covering anime trends, manga rumors, and Otaku culture debates.</p>
+                </div>
+
+                <div class="category-card glass-panel reveal" onclick="location.href='videos.html?category=guides'">
+                    <div class="category-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                    <h3>Beginner Anime Guides</h3>
+                    <p>Perfect starting lists, chronological orders, and genre explanations for new fans.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TRENDING ANIME SECTION -->
+    <section class="section-padding" id="trending-section">
+        <div class="container">
+            <span class="subtitle center-text">Currently Hot</span>
+            <h2 class="section-title center text-glow center-text">Trending Anime Discussions</h2>
+            <div class="trending-outer reveal">
+                <div class="trending-carousel">
+
+                    <div class="trending-card">
+                        <span class="trending-rating">4.9/5</span>
+                        <img src="images/Re-Zero.jpg" alt="Re:zero" class="trending-img">
+                        <div class="trending-info">
+                            <h3>Re:zero</h3>
+                            <p>Fantasy / Isekai</p>
+                        </div>
+                    </div>
+                    
+                    <div class="trending-card">
+                        <span class="trending-rating">4.8/5</span>
+                        <img src="images/Solor-Leveling.png" alt="Solo Leveling" class="trending-img">
+                        <div class="trending-info">
+                            <h3>Solo Leveling</h3>
+                            <p>Fantasy / Action</p>
+                        </div>
+                    </div>
+
+                    <div class="trending-card">
+                        <span class="trending-rating">4.7/5</span>
+                        <img src="images/Jujusu-Kaisen.webp" alt="Jujutsu Kaisen" class="trending-img">
+                        <div class="trending-info">
+                            <h3>Jujutsu Kaisen</h3>
+                            <p>Supernatural / Shonen</p>
+                        </div>
+                    </div>
+
+                    <div class="trending-card">
+                        <span class="trending-rating">4.9/5</span>
+                        <img src="images/one-piece.jpg" alt="One Piece" class="trending-img">
+                        <div class="trending-info">
+                            <h3>One Piece</h3>
+                            <p>Adventure / Fantasy</p>
+                        </div>
+                    </div>
+
+                    <div class="trending-card">
+                        <span class="trending-rating">4.6/5</span>
+                        <img src="images/Dandadan.jpg" alt="Dandadan" class="trending-img">
+                        <div class="trending-info">
+                            <h3>Dandadan</h3>
+                            <p>Sci-Fi / Comedy</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY WATCH ANIME BOY LK -->
+    <section class="section-padding" id="why-choose" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title center text-glow center-text">Why Watch Anime Boy LK?</h2>
+            <div class="benefits-grid">
+                
+                <div class="benefit-card glass-panel reveal">
+                    <i class="fa-solid fa-language"></i>
+                    <h3>Sinhala Anime Explanations</h3>
+                    <p>We break down complicated plot elements, psychological contexts, and cultural meanings in simple Sinhala.</p>
+                </div>
+
+                <div class="benefit-card glass-panel reveal">
+                    <i class="fa-solid fa-child-reaching"></i>
+                    <h3>Beginner Friendly</h3>
+                    <p>New to anime? Our tailored guides and top recommendation tiers make it easy to start your Otaku journey.</p>
+                </div>
+
+                <div class="benefit-card glass-panel reveal">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <h3>Honest & Deep Reviews</h3>
+                    <p>No simple fan hype. We objectively evaluate animation standards, script pacing, and character development.</p>
+                </div>
+
+                <div class="benefit-card glass-panel reveal">
+                    <i class="fa-solid fa-comments"></i>
+                    <h3>Deep Anime Discussions</h3>
+                    <p>Participate in active channel Q&As, comment theory predictions, and collaborate with the local community.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LATEST BLOG POSTS PREVIEW -->
+    <section class="section-padding" id="home-blogs">
+        <div class="container">
+            <h2 class="section-title center text-glow center-text">Latest Blog Posts</h2>
+            <div class="home-blogs-grid">
+                
+                <div class="blog-card glass-panel reveal">
+                    <div class="blog-img-container">
+                        <img src="images/Blog-Guide-download-anime.jpg" alt="Beginner Anime Guide" class="blog-img">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-tag">Guides</span>
+                        <h3>Beginner Anime Guide: Where to Download</h3>
+                        <p>Discover the best platforms to legally watch and download anime in Sinhala.</p>
+                        <a href="blog.html" class="blog-readmore">Read Article <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card glass-panel reveal">
+                    <div class="blog-img-container">
+                        <img src="images/Blog-Review-The_New_gate.jpg" alt="Best Anime for Beginners" class="blog-img">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-tag">Reviews</span>
+                        <h3>Why did they do that? | The New Gate anime adaptation</h3>
+                        <p>Critiquing the animation decisions behind the adaptation of the popular light novel.</p>
+                        <a href="blog.html" class="blog-readmore">Read Article <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card glass-panel reveal">
+                    <div class="blog-img-container">
+                        <img src="images/Blog-about-visual-novels.jpg" alt="Animation Quality" class="blog-img">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-tag">Discussions</span>
+                        <h3>Let's talk about Visual Novels | Explanation</h3>
+                        <p>An in-depth look at the world of visual novels and their impact on the anime industry.</p>
+                        <a href="blog.html" class="blog-readmore">Read Article <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CALL TO ACTION -->
+    <section class="section-padding container" style="margin-bottom: 100px;">
+        <div class="cta-section reveal">
+            <div class="cta-content">
+                <h2>Join the Anime Community</h2>
+                <p>Suggest new anime series to review, cast votes on major channel projects, follow our reading guides, and interact with other Sri Lankan Otakus.</p>
+                <div class="cta-btns">
+                    <a href="community.html" class="btn btn-primary" id="cta-join-btn"><i class="fa-solid fa-users"></i> Visit Community Hub</a>
+                    <a href="https://discord.gg/AnimeBoyLK" target="_blank" class="btn btn-secondary" id="cta-discord-btn"><i class="fa-brands fa-discord"></i> Join Discord</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="global-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-mask logo-icon text-glow"></i>
+                        <span>ANIME BOY <span class="logo-dot">LK</span></span>
+                    </a>
+                    <p class="footer-desc">
+                        Sri Lanka's leading content creator platform providing high-quality anime reviews, histories, and theories in Sinhala.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://youtube.com/@AnimeBoyLK" target="_blank" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://discord.gg/AnimeBoyLK" target="_blank" class="social-btn" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="https://instagram.com/AnimeBoyLK" target="_blank" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/AnimeBoyLK" target="_blank" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Creator</a></li>
+                        <li><a href="videos.html">Watch Videos</a></li>
+                        <li><a href="blog.html">Anime Blog</a></li>
+                        <li><a href="community.html">Community Page</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="videos.html?category=reviews">Anime Reviews</a></li>
+                        <li><a href="videos.html?category=analysis">Character Depth</a></li>
+                        <li><a href="videos.html?category=podcasts">Weekly Podcasts</a></li>
+                        <li><a href="videos.html?category=guides">Otaku Guides</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Branding Channel</h3>
+                    <p style="color: var(--color-text-sub); font-size: 0.95rem; margin-bottom: 16px;">
+                        Subscribe on YouTube to catch new videos every week!
+                    </p>
+                    <a href="https://www.youtube.com/@AnimeBoyLK" target="_blank" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem; width: 100%;">
+                        <i class="fab fa-youtube"></i> Visit Channel
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Anime Boy LK. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
